@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="packaging/appload/scanly/icon.png" width="140" alt="Scanly">
+<img src="https://github.com/Err0r-v2/Scanly/releases/download/v0.1.0/icon.png" width="140" alt="Scanly">
 
 # Scanly
 
