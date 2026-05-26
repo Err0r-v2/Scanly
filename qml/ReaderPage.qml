@@ -12,10 +12,30 @@ Page {
     property var pageUrls: []
     property int currentPage: 0
     property bool chromeVisible: false
+    // Per-session orientation freeze: when locked, ignore the accelerometer
+    // and keep whatever rotation/spread we captured at lock time.
+    property bool orientationLocked: false
+    property int  lockedRotation: 0
+    property bool lockedLandscape: false
+
     // Under AppLoad, xochitl is locked to Portrait by main.cpp, so the same
     // QML rotation works in both runtimes.
-    property int displayRotation: device.landscape ? device.rotationAngle : 0
-    property bool landscapeSpread: device.landscape || width > height
+    property int displayRotation: orientationLocked
+        ? lockedRotation
+        : (device.landscape ? device.rotationAngle : 0)
+    property bool landscapeSpread: orientationLocked
+        ? lockedLandscape
+        : (device.landscape || width > height)
+
+    function toggleOrientationLock() {
+        if (page.orientationLocked) {
+            page.orientationLocked = false
+        } else {
+            page.lockedRotation  = device.landscape ? device.rotationAngle : 0
+            page.lockedLandscape = device.landscape || width > height
+            page.orientationLocked = true
+        }
+    }
     property int spreadSize: landscapeSpread ? 2 : 1
     // Per-page natural aspect ratio (w/h). Recorded as each Image loads so we
     // can collapse a 2-page spread to a single full-screen frame whenever the
@@ -159,6 +179,9 @@ Page {
     }
 
     function visiblePageIndexes() {
+        // Order is current-page first, then next-page. The spread RowLayout
+        // is laid out RTL when in landscape so the current page lands on the
+        // right (manga reading order) and gets created/loaded first.
         const indexes = []
         const size = page.effectiveSpreadSize()
         for (let i = 0; i < size; i++) {
@@ -166,8 +189,6 @@ Page {
             if (idx < page.pageUrls.length)
                 indexes.push(idx)
         }
-        if (size > 1)
-            indexes.reverse()
         return indexes
     }
 
@@ -234,6 +255,23 @@ Page {
         } else {
             source.fetchChapterPages(cid)
         }
+    }
+
+    function advanceForward() {
+        const onLast = page.visibleLastPage() >= page.pageUrls.length - 1
+        if (onLast && settings.autoAdvanceChapter && page.pageUrls.length > 0) {
+            if (page.advanceToNextChapter()) return
+        }
+        page.goToPage(page.currentPage + page.effectiveSpreadSize())
+    }
+
+    function advanceBackward() {
+        // If the page just before us is a landscape spread, step back by 1
+        // so we land on it alone, not paired with a neighbour.
+        var step = page.landscapeSpread ? 2 : 1
+        if (page.currentPage - 1 >= 0 && page.isLandscapePage(page.currentPage - 1))
+            step = 1
+        page.goToPage(page.currentPage - step)
     }
 
     function advanceToNextChapter() {
@@ -350,6 +388,57 @@ Page {
                 Layout.maximumWidth: page.landscapeSpread ? 460 : 360
             }
 
+            // Orientation lock toggle. Same closed-lock glyph in both states,
+            // only the colour shifts to show whether the lock is engaged.
+            Canvas {
+                id: lockIcon
+                width: 40; height: 40
+                Layout.alignment: Qt.AlignVCenter
+
+                Connections {
+                    target: page
+                    function onOrientationLockedChanged() { lockIcon.requestPaint() }
+                }
+
+                onPaint: {
+                    const ctx = getContext("2d")
+                    ctx.reset()
+                    const locked = page.orientationLocked
+                    const colour = locked ? Theme.ink : Theme.paperEdge
+                    ctx.strokeStyle = colour
+                    ctx.lineWidth = 2.4
+                    ctx.lineCap = "round"
+                    ctx.lineJoin = "round"
+
+                    const cx = width / 2
+                    const bodyTop = 18
+                    const bodyW = 22
+                    const bodyH = 16
+                    const bx = cx - bodyW / 2
+
+                    if (locked) {
+                        ctx.fillStyle = colour
+                        ctx.fillRect(bx, bodyTop, bodyW, bodyH)
+                    } else {
+                        ctx.strokeRect(bx, bodyTop, bodyW, bodyH)
+                    }
+                    // Keyhole dot
+                    ctx.fillStyle = locked ? Theme.paper : colour
+                    ctx.beginPath()
+                    ctx.arc(cx, bodyTop + bodyH / 2, 2.2, 0, Math.PI * 2)
+                    ctx.fill()
+                    // Closed shackle in both states
+                    ctx.beginPath()
+                    ctx.arc(cx, bodyTop, 7, Math.PI, 0)
+                    ctx.stroke()
+                }
+                MouseArea {
+                    anchors.fill: parent
+                    anchors.margins: -8
+                    onClicked: page.toggleOrientationLock()
+                }
+            }
+
             // Collapse-chrome icon, frame-brackets, matches the hand-drawn
             // Canvas wifi/battery glyphs in StatusBar.
             Canvas {
@@ -406,6 +495,9 @@ Page {
             anchors.fill: parent
             spacing: page.landscapeSpread ? 12 : 0
             visible: page.pageUrls.length > 0
+            // Mirror in landscape so the current page (Repeater item 0) lands
+            // on the right, matching manga RTL reading order.
+            LayoutMirroring.enabled: page.landscapeSpread
 
             Repeater {
                 model: page.visiblePageIndexes()
@@ -462,23 +554,31 @@ Page {
 
         MouseArea {
             anchors.fill: parent
-            onClicked: (mouse) => {
-                if (mouse.x < width / 2) {
-                    const onLast = page.visibleLastPage() >= page.pageUrls.length - 1
-                    if (onLast && settings.autoAdvanceChapter && page.pageUrls.length > 0) {
-                        if (page.advanceToNextChapter()) return
-                    }
-                    page.goToPage(page.currentPage + page.effectiveSpreadSize())
-                } else {
-                    // Backward step: if the page just before us is a landscape
-                    // spread we want to land on it alone, not pair it with its
-                    // neighbour. Otherwise step back by 2 in landscape mode.
-                    var step = page.landscapeSpread ? 2 : 1
-                    if (page.currentPage - 1 >= 0
-                            && page.isLandscapePage(page.currentPage - 1))
-                        step = 1
-                    page.goToPage(page.currentPage - step)
+            property real pressX: 0
+            property real pressY: 0
+            property bool swiped: false
+
+            onPressed: (mouse) => {
+                pressX = mouse.x
+                pressY = mouse.y
+                swiped = false
+            }
+            onReleased: (mouse) => {
+                const dx = mouse.x - pressX
+                const dy = mouse.y - pressY
+                const threshold = Math.max(60, width * 0.08)
+                if (Math.abs(dx) >= threshold && Math.abs(dx) > Math.abs(dy) * 1.5) {
+                    swiped = true
+                    // Manga RTL: the current page slides to the right to reveal
+                    // the next one. Swipe right -> next, swipe left -> previous.
+                    if (dx > 0) page.advanceForward()
+                    else        page.advanceBackward()
                 }
+            }
+            onClicked: (mouse) => {
+                if (swiped) return
+                if (mouse.x < width / 2) page.advanceForward()
+                else                     page.advanceBackward()
             }
         }
 

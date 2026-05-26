@@ -68,6 +68,7 @@ struct ContentView: View {
             StepRow(index: 3, title: "Scanly",
                     subtitle: "The manga reader itself. Tap its tile to open.",
                     eta: "10 s",
+                    version: "v0.2.0",
                     status: model.scanlyStatus) {
                 Task { await model.installScanly() }
             }

@@ -5,6 +5,7 @@ struct StepRow: View {
     let title: String
     let subtitle: String
     let eta: String
+    var version: String? = nil
     let status: StepStatus
     let action: () -> Void
 
@@ -19,6 +20,11 @@ struct StepRow: View {
                         .font(Theme.label(12))
                         .tracking(2.0)
                         .foregroundColor(Theme.ink)
+                    if let version = version {
+                        Text(version)
+                            .font(Theme.code(10))
+                            .foregroundColor(Theme.inkMute)
+                    }
                     Text("~ \(eta)")
                         .font(Theme.label(9))
                         .tracking(1.4)
