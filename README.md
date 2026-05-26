@@ -120,3 +120,9 @@ Runtime hosting on device: [XOVI](https://github.com/asivery/xovi)
 [asivery](https://github.com/asivery).
 
 Unofficial third-party application. Not affiliated with reMarkable AS.
+
+## License
+
+Scanly is licensed under the **GNU General Public License v3.0 or later**
+(see [`LICENSE`](LICENSE)). Forks and redistributions must remain
+GPL-compatible.
