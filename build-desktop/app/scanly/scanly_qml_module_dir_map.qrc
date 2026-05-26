@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/qt/qml/app/scanly">/Users/stan/Desktop/Scanly/build-desktop/app/scanly</file>
-
-  </qresource>
-</RCC>
