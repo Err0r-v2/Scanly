@@ -1,0 +1,1615 @@
+[
+    {
+        "classes": [
+            {
+                "className": "ChapterModel",
+                "lineNumber": 6,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "baseUrl",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "hash",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pages",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "setPages",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "ChapterModel",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "chaptermodel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "DeviceStatus",
+                "lineNumber": 6,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "batteryPercent",
+                        "notify": "changed",
+                        "read": "batteryPercent",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "batteryCharging",
+                        "notify": "changed",
+                        "read": "batteryCharging",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "online",
+                        "notify": "changed",
+                        "read": "online",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "landscape",
+                        "notify": "changed",
+                        "read": "landscape",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "rotationAngle",
+                        "notify": "changed",
+                        "read": "rotationAngle",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "storageBytesTotal",
+                        "notify": "changed",
+                        "read": "storageBytesTotal",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qint64",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "storageBytesFree",
+                        "notify": "changed",
+                        "read": "storageBytesFree",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qint64",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "storageBytesUsed",
+                        "notify": "changed",
+                        "read": "storageBytesUsed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qint64",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "currentTime",
+                        "notify": "tick",
+                        "read": "currentTime",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "DeviceStatus",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "tick",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "devicestatus.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "DownloadManager",
+                "lineNumber": 13,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaTitle",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "chapterTitle",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "chapterNumber",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "coverUrl",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "downloadChapter",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaTitle",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "chapterTitle",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "chapterNumber",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "isCloned": true,
+                        "name": "downloadChapter",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaTitle",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "chapterTitle",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "isCloned": true,
+                        "name": "downloadChapter",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaTitle",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "isCloned": true,
+                        "name": "downloadChapter",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 10,
+                        "isCloned": true,
+                        "name": "downloadChapter",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 11,
+                        "isCloned": true,
+                        "name": "downloadChapter",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 12,
+                        "name": "removeChapter",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 13,
+                        "name": "isDownloaded",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 14,
+                        "name": "localPagesFor",
+                        "returnType": "QStringList"
+                    },
+                    {
+                        "access": "public",
+                        "index": 15,
+                        "name": "totalSizeOnDisk",
+                        "returnType": "qint64"
+                    },
+                    {
+                        "access": "public",
+                        "index": 16,
+                        "name": "completedDownloads",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "index": 17,
+                        "name": "activeDownloads",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 18,
+                        "name": "sizeForChapter",
+                        "returnType": "qint64"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 19,
+                        "name": "coverPathFor",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "index": 20,
+                        "name": "downloadedMangas",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 21,
+                        "name": "downloadedChaptersFor",
+                        "returnType": "QVariantList"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "DownloadManager",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "total",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "chapterDownloadStarted",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "done",
+                                "type": "int"
+                            },
+                            {
+                                "name": "total",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "chapterDownloadProgress",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "chapterDownloadFinished",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "error",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "chapterDownloadFailed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "chapterRemoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "manifestChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "downloadmanager.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "EpaperHints",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mode",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "setAppLoadRefreshMode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "resetAppLoadRefreshMode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "clearGhosting",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "partialRefresh",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "fullRefresh",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "EpaperHints",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "epaperhints.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "ImageCache",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "sizeOnDisk",
+                        "returnType": "qint64"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "clear",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "ImageCache",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "imagecache.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "LibraryStore",
+                "lineNumber": 5,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "coverUrl",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "follow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "unfollow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "isFollowed",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pageIndex",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "updatePosition",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "get",
+                        "returnType": "QVariantMap"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "entryAt",
+                        "returnType": "QVariantMap"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "firstEntry",
+                        "returnType": "QVariantMap"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "LibraryStore",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "librarystore.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "MangaMetaSource",
+                "lineNumber": 11,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "fetchMetadata",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "metadataFor",
+                        "returnType": "QVariantMap"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "clearCache",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "MangaMetaSource",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "metadataReceived",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "mangametasource.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "MangaSourceRouter",
+                "lineNumber": 16,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "searchManga",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "languages",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "fetchChapters",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "isCloned": true,
+                        "name": "fetchChapters",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "name": "fetchChapterPages",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "name": "languageForId",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "fetchFallbackCover",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 11,
+                        "name": "fallbackCoverFor",
+                        "returnType": "QString"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "MangaSourceRouter",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "results",
+                                "type": "QJsonArray"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "searchResults",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapters",
+                                "type": "QJsonArray"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "chaptersReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "urls",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "chapterPagesReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "coverUrl",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "fallbackCoverReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "mangasourcerouter.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "PageImageCache",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "urls",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "prepare",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "url",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "displayUrl",
+                        "returnType": "QString"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "PageImageCache",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "changed",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "pageimagecache.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "SearchModel",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "SearchModel",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "results",
+                                "type": "QJsonArray"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "updateFrom",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "searchmodel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "SettingsStore",
+                "lineNumber": 7,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "name": "isSourceEnabled",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "toggleSource",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "name": "toggleKeyboardLayout",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "code",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 12,
+                        "name": "toggleLanguage",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "blackAndWhite",
+                        "notify": "blackAndWhiteChanged",
+                        "read": "blackAndWhite",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setBlackAndWhite"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "autoAdvanceChapter",
+                        "notify": "autoAdvanceChapterChanged",
+                        "read": "autoAdvanceChapter",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoAdvanceChapter"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "forceScreenMode",
+                        "notify": "forceScreenModeChanged",
+                        "read": "forceScreenMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setForceScreenMode"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "screenMode",
+                        "notify": "screenModeChanged",
+                        "read": "screenMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setScreenMode"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "ghostCleanInterval",
+                        "notify": "ghostCleanIntervalChanged",
+                        "read": "ghostCleanInterval",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setGhostCleanInterval"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "preferredLanguages",
+                        "notify": "preferredLanguagesChanged",
+                        "read": "preferredLanguages",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false,
+                        "write": "setPreferredLanguages"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "offlineMode",
+                        "notify": "offlineModeChanged",
+                        "read": "offlineMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setOfflineMode"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "enabledSources",
+                        "notify": "enabledSourcesChanged",
+                        "read": "enabledSources",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false,
+                        "write": "setEnabledSources"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "keyboardLayout",
+                        "notify": "keyboardLayoutChanged",
+                        "read": "keyboardLayout",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setKeyboardLayout"
+                    }
+                ],
+                "qualifiedClassName": "SettingsStore",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "blackAndWhiteChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "autoAdvanceChapterChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "forceScreenModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "screenModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "ghostCleanIntervalChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "preferredLanguagesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "offlineModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "enabledSourcesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "keyboardLayoutChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "settingsstore.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "SushiScanSource",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "searchManga",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "languages",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "fetchChapters",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "isCloned": true,
+                        "name": "fetchChapters",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "name": "fetchChapterPages",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "SushiScanSource",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "results",
+                                "type": "QJsonArray"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "searchResults",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapters",
+                                "type": "QJsonArray"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "chaptersReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "urls",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "chapterPagesReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "sushiscansource.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "WeebCentralSource",
+                "lineNumber": 12,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "searchManga",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "languages",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "fetchChapters",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "isCloned": true,
+                        "name": "fetchChapters",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "name": "fetchChapterPages",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "name": "fetchSeriesCover",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "WeebCentralSource",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "results",
+                                "type": "QJsonArray"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "searchResults",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapters",
+                                "type": "QJsonArray"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "chaptersReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "chapterId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "urls",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "chapterPagesReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mangaId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "coverUrl",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "seriesCoverReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "weebcentralsource.h",
+        "outputRevision": 68
+    }
+]

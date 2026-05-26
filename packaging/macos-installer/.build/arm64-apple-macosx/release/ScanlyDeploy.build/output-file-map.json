@@ -1,0 +1,73 @@
+{
+  "": {
+    "dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ScanlyDeploy.d",
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ScanlyDeploy.o",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/primary.swiftdeps"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/ContentView.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ContentView.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ContentView.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/Installer.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/Installer.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/Installer~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/Installer.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/Installer.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/InstallerModel.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/InstallerModel.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/InstallerModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/InstallerModel.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/InstallerModel.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/SSHClient.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/SSHClient.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/SSHClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/SSHClient.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/SSHClient.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/ScanlyDeployApp.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ScanlyDeployApp.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ScanlyDeployApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ScanlyDeployApp.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/ScanlyDeployApp.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/Theme.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/Theme.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/Theme~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/Theme.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/Theme.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/Views/DeviceCard.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/DeviceCard.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/DeviceCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/DeviceCard.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/DeviceCard.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/Views/LogPane.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/LogPane.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/LogPane~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/LogPane.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/LogPane.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/Views/NoticeBanner.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/NoticeBanner.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/NoticeBanner~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/NoticeBanner.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/NoticeBanner.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/Sources/ScanlyDeploy/Views/StepRow.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/StepRow.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/StepRow~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/StepRow.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/StepRow.dia"
+  },
+  "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/DerivedSources/resource_bundle_accessor.swift": {
+    "object": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/stan/Desktop/Scanly/packaging/macos-installer/.build/arm64-apple-macosx/release/ScanlyDeploy.build/resource_bundle_accessor.dia"
+  }
+}

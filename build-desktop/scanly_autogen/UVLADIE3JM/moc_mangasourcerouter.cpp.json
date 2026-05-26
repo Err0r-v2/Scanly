@@ -1,0 +1,193 @@
+{
+    "classes": [
+        {
+            "className": "MangaSourceRouter",
+            "lineNumber": 16,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 25,
+                    "name": "searchManga",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "languages",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 6,
+                    "lineNumber": 26,
+                    "name": "fetchChapters",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "isCloned": true,
+                    "lineNumber": 26,
+                    "name": "fetchChapters",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 8,
+                    "lineNumber": 28,
+                    "name": "fetchChapterPages",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 9,
+                    "isConst": true,
+                    "lineNumber": 30,
+                    "name": "languageForId",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 10,
+                    "lineNumber": 35,
+                    "name": "fetchFallbackCover",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 11,
+                    "isConst": true,
+                    "lineNumber": 36,
+                    "name": "fallbackCoverFor",
+                    "returnType": "QString"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "MangaSourceRouter",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "results",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 39,
+                    "name": "searchResults",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapters",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 40,
+                    "name": "chaptersReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "urls",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 41,
+                    "name": "chapterPagesReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "coverUrl",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 42,
+                    "name": "fallbackCoverReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 43,
+                    "name": "errorOccurred",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "mangasourcerouter.h",
+    "outputRevision": 69
+}

@@ -1,0 +1,17 @@
+--resource
+/src/build-rm/.qt/rcc/qmake_app_scanly.qrc
+--resource
+/src/build-rm/.qt/rcc/scanly_raw_qml_0.qrc
+/qt/qml/app/scanly/qml/Main.qml
+/qt/qml/app/scanly/qml/Theme.qml
+/qt/qml/app/scanly/qml/LibraryPage.qml
+/qt/qml/app/scanly/qml/DiscoverPage.qml
+/qt/qml/app/scanly/qml/MangaPage.qml
+/qt/qml/app/scanly/qml/ReaderPage.qml
+/qt/qml/app/scanly/qml/SettingsPage.qml
+/qt/qml/app/scanly/qml/components/Hairline.qml
+/qt/qml/app/scanly/qml/components/Wordmark.qml
+/qt/qml/app/scanly/qml/components/StatusBar.qml
+/qt/qml/app/scanly/qml/components/MangaCover.qml
+/qt/qml/app/scanly/qml/components/Sidebar.qml
+/qt/qml/app/scanly/qml/components/OnScreenKeyboard.qml

@@ -1,0 +1,12 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                ],
+                "filepath": "/src/qml/Theme.qml"
+            }
+        ],
+        "moduleId": "app.scanly(scanly)"
+    }
+]

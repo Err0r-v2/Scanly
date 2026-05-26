@@ -1,0 +1,337 @@
+{
+    "classes": [
+        {
+            "className": "DownloadManager",
+            "lineNumber": 13,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaTitle",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "chapterTitle",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "chapterNumber",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "coverUrl",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "downloadChapter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaTitle",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "chapterTitle",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "chapterNumber",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "isCloned": true,
+                    "name": "downloadChapter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaTitle",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "chapterTitle",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 8,
+                    "isCloned": true,
+                    "name": "downloadChapter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaTitle",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 9,
+                    "isCloned": true,
+                    "name": "downloadChapter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 10,
+                    "isCloned": true,
+                    "name": "downloadChapter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 11,
+                    "isCloned": true,
+                    "name": "downloadChapter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "removeChapter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "isDownloaded",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "localPagesFor",
+                    "returnType": "QStringList"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "name": "totalSizeOnDisk",
+                    "returnType": "qint64"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "name": "completedDownloads",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 17,
+                    "name": "activeDownloads",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "sizeForChapter",
+                    "returnType": "qint64"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 19,
+                    "name": "coverPathFor",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 20,
+                    "name": "downloadedMangas",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 21,
+                    "name": "downloadedChaptersFor",
+                    "returnType": "QVariantList"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "DownloadManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "total",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "chapterDownloadStarted",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "done",
+                            "type": "int"
+                        },
+                        {
+                            "name": "total",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "chapterDownloadProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "chapterDownloadFinished",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "error",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "chapterDownloadFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "chapterRemoved",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "manifestChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "downloadmanager.h",
+    "outputRevision": 68
+}

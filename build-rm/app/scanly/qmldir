@@ -1,0 +1,17 @@
+module app.scanly
+typeinfo scanly.qmltypes
+prefer :/qt/qml/app/scanly/
+Main 1.0 qml/Main.qml
+singleton Theme 1.0 qml/Theme.qml
+LibraryPage 1.0 qml/LibraryPage.qml
+DiscoverPage 1.0 qml/DiscoverPage.qml
+MangaPage 1.0 qml/MangaPage.qml
+ReaderPage 1.0 qml/ReaderPage.qml
+SettingsPage 1.0 qml/SettingsPage.qml
+Hairline 1.0 qml/components/Hairline.qml
+Wordmark 1.0 qml/components/Wordmark.qml
+StatusBar 1.0 qml/components/StatusBar.qml
+MangaCover 1.0 qml/components/MangaCover.qml
+Sidebar 1.0 qml/components/Sidebar.qml
+OnScreenKeyboard 1.0 qml/components/OnScreenKeyboard.qml
+

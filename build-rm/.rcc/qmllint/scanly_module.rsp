@@ -1,0 +1,10 @@
+-I
+/src/build-rm
+-I
+/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/qml
+--resource
+/src/build-rm/.qt/rcc/qmake_app_scanly.qrc
+--resource
+/src/build-rm/.qt/rcc/scanly_raw_qml_0.qrc
+--module
+app.scanly

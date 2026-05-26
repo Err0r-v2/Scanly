@@ -1,0 +1,706 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Linux -  - aarch64
+      The host system is: Linux - 7.0.5-orbstack-00330-ge3df4e19b0a0-dirty - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++ -mcpu=cortex-a53+crc+crypto;-mbranch-protection=standard;--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux
+      Build flags: -O2;-pipe;-g;-feliminate-unused-debug-types
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /src/build-rm/CMakeFiles/3.31.10/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:81 (try_compile)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-Sdwicn"
+      binary: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-Sdwicn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O2 -g -feliminate-unused-debug-types "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib"
+      CMAKE_SYSROOT: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-Sdwicn'
+        
+        Run Build Command(s): /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7174b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7174b.dir/build.make CMakeFiles/cmTC_7174b.dir/build
+        gmake[1]: Entering directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-Sdwicn'
+        Building CXX object CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux   -O2 -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++
+        Target: aarch64-remarkable-linux
+        Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=aarch64-codexsdk-linux --target=aarch64-remarkable-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-remarkable-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/aarch64-remarkable-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7174b.dir/'
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/cc1plus -quiet -v -isysroot /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux -D_GNU_SOURCE /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7174b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o /tmp/ccC7D2u3.s
+        GNU C++17 (GCC) version 13.4.0 (aarch64-remarkable-linux)
+        	compiled by GNU C version 13.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/local/include"
+        ignoring nonexistent directory "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/../../../../../aarch64-remarkable-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/
+        End of search list.
+        Compiler executable checksum: 5feb9edf8282d44ca09631cd45c96bc4
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7174b.dir/'
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/as -v --gdwarf-5 -EL -march=armv8-a+crc+crypto -mabi=lp64 -o CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccC7D2u3.s
+        GNU assembler version 2.42.0 (aarch64-remarkable-linux) using BFD version (GNU Binutils) 2.42.0.20240723
+        COMPILER_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/
+        LIBRARY_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7174b
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7174b.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++
+        COLLECT_LTO_WRAPPER=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper
+        Target: aarch64-remarkable-linux
+        Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=aarch64-codexsdk-linux --target=aarch64-remarkable-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-remarkable-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/aarch64-remarkable-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COMPILER_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/
+        LIBRARY_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_7174b' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_7174b.'
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/collect2 -plugin /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so -plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuJDVAr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_7174b /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o -L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib -O1 --hash-style=gnu --as-needed --compress-debug-sections=zlib -v CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o
+        collect2 version 13.4.0
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/ld -plugin /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so -plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuJDVAr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_7174b /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o -L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib -O1 --hash-style=gnu --as-needed --compress-debug-sections=zlib -v CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o
+        GNU ld (GNU Binutils) 2.42.0.20240723
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_7174b' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_7174b.'
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux  -O2 -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib -v -Wl,-v CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7174b
+        gmake[1]: Leaving directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-Sdwicn'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:189 (message)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0]
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux]
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward]
+          add: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include]
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include]
+          add: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed]
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/]
+        end of search list found
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0]
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux]
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward]
+        collapse include dir [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include] ==> [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include]
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include]
+        collapse include dir [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed] ==> [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed]
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include]
+        implicit include dirs: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward;/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include;/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:225 (message)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-Sdwicn']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7174b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7174b.dir/build.make CMakeFiles/cmTC_7174b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-Sdwicn']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux   -O2 -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++]
+        ignore line: [Target: aarch64-remarkable-linux]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=aarch64-codexsdk-linux --target=aarch64-remarkable-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-remarkable-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/aarch64-remarkable-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7174b.dir/']
+        ignore line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/cc1plus -quiet -v -isysroot /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux -D_GNU_SOURCE /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7174b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o /tmp/ccC7D2u3.s]
+        ignore line: [GNU C++17 (GCC) version 13.4.0 (aarch64-remarkable-linux)]
+        ignore line: [	compiled by GNU C version 13.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/../../../../../aarch64-remarkable-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward]
+        ignore line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include]
+        ignore line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 5feb9edf8282d44ca09631cd45c96bc4]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7174b.dir/']
+        ignore line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/as -v --gdwarf-5 -EL -march=armv8-a+crc+crypto -mabi=lp64 -o CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccC7D2u3.s]
+        ignore line: [GNU assembler version 2.42.0 (aarch64-remarkable-linux) using BFD version (GNU Binutils) 2.42.0.20240723]
+        ignore line: [COMPILER_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/]
+        ignore line: [LIBRARY_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_7174b]
+        ignore line: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7174b.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper]
+        ignore line: [Target: aarch64-remarkable-linux]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=aarch64-codexsdk-linux --target=aarch64-remarkable-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-remarkable-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/aarch64-remarkable-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/]
+        ignore line: [LIBRARY_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_7174b' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_7174b.']
+        link line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/collect2 -plugin /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so -plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuJDVAr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_7174b /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o -L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib -O1 --hash-style=gnu --as-needed --compress-debug-sections=zlib -v CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o]
+          arg [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccuJDVAr.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7174b] ==> ignore
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o]
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o]
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o]
+          arg [-L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0] ==> dir [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0]
+          arg [-L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0] ==> dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0]
+          arg [-L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib] ==> dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib]
+          arg [-L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0] ==> dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0]
+          arg [-L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib] ==> dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib]
+          arg [-O1] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [--compress-debug-sections=zlib] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o]
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o]
+        ignore line: [collect2 version 13.4.0]
+        ignore line: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/ld -plugin /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so -plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuJDVAr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_7174b /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o -L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib -O1 --hash-style=gnu --as-needed --compress-debug-sections=zlib -v CMakeFiles/cmTC_7174b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o]
+        linker tool for 'CXX': /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/ld
+        collapse library dir [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0] ==> [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0]
+        collapse library dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0]
+        collapse library dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib]
+        collapse library dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0]
+        collapse library dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o]
+        implicit dirs: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:262 (cmake_determine_linker_id)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/ld" "-v"
+      GNU ld (GNU Binutils) 2.42.0.20240723
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/Qt6Dependencies.cmake:32 (_qt_internal_find_third_party_dependencies)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/Qt6Config.cmake:155 (include)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-sqvTNv"
+      binary: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-sqvTNv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib"
+      CMAKE_MODULE_PATH: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/3rdparty/kwin"
+      CMAKE_SYSROOT: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-sqvTNv'
+        
+        Run Build Command(s): /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_24609/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_24609.dir/build.make CMakeFiles/cmTC_24609.dir/build
+        gmake[1]: Entering directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-sqvTNv'
+        Building CXX object CMakeFiles/cmTC_24609.dir/src.cxx.o
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux -DCMAKE_HAVE_LIBC_PTHREAD  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_24609.dir/src.cxx.o -c /src/build-rm/CMakeFiles/CMakeScratch/TryCompile-sqvTNv/src.cxx
+        Linking CXX executable cmTC_24609
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24609.dir/link.txt --verbose=1
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib  CMakeFiles/cmTC_24609.dir/src.cxx.o -o cmTC_24609
+        gmake[1]: Leaving directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-sqvTNv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:55 (include)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/Qt6Config.cmake:200 (find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-YbsuF7"
+      binary: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-YbsuF7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib"
+      CMAKE_MODULE_PATH: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/3rdparty/kwin"
+      CMAKE_SYSROOT: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-YbsuF7'
+        
+        Run Build Command(s): /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f37c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f37c9.dir/build.make CMakeFiles/cmTC_f37c9.dir/build
+        gmake[1]: Entering directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-YbsuF7'
+        Building CXX object CMakeFiles/cmTC_f37c9.dir/src.cxx.o
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux -DHAVE_STDATOMIC  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_f37c9.dir/src.cxx.o -c /src/build-rm/CMakeFiles/CMakeScratch/TryCompile-YbsuF7/src.cxx
+        Linking CXX executable cmTC_f37c9
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f37c9.dir/link.txt --verbose=1
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib  CMakeFiles/cmTC_f37c9.dir/src.cxx.o -o cmTC_f37c9
+        gmake[1]: Leaving directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-YbsuF7'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Linux -  - aarch64
+      The host system is: Linux - 7.0.5-orbstack-00330-ge3df4e19b0a0-dirty - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++ -mcpu=cortex-a53+crc+crypto;-mbranch-protection=standard;--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux
+      Build flags: -O2;-pipe;-g;-feliminate-unused-debug-types
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /src/build-rm/CMakeFiles/3.31.10/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:81 (try_compile)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-23dbxi"
+      binary: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-23dbxi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O2 -g -feliminate-unused-debug-types "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib"
+      CMAKE_SYSROOT: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-23dbxi'
+        
+        Run Build Command(s): /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c35a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8c35a.dir/build.make CMakeFiles/cmTC_8c35a.dir/build
+        gmake[1]: Entering directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-23dbxi'
+        Building CXX object CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux   -O2 -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++
+        Target: aarch64-remarkable-linux
+        Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=aarch64-codexsdk-linux --target=aarch64-remarkable-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-remarkable-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/aarch64-remarkable-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_8c35a.dir/'
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/cc1plus -quiet -v -isysroot /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux -D_GNU_SOURCE /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8c35a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o /tmp/cck05DNK.s
+        GNU C++17 (GCC) version 13.4.0 (aarch64-remarkable-linux)
+        	compiled by GNU C version 13.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/local/include"
+        ignoring nonexistent directory "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/../../../../../aarch64-remarkable-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed
+         /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/
+        End of search list.
+        Compiler executable checksum: 5feb9edf8282d44ca09631cd45c96bc4
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_8c35a.dir/'
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/as -v --gdwarf-5 -EL -march=armv8-a+crc+crypto -mabi=lp64 -o CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o /tmp/cck05DNK.s
+        GNU assembler version 2.42.0 (aarch64-remarkable-linux) using BFD version (GNU Binutils) 2.42.0.20240723
+        COMPILER_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/
+        LIBRARY_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_8c35a
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c35a.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++
+        COLLECT_LTO_WRAPPER=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper
+        Target: aarch64-remarkable-linux
+        Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=aarch64-codexsdk-linux --target=aarch64-remarkable-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-remarkable-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/aarch64-remarkable-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COMPILER_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/
+        LIBRARY_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_8c35a' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_8c35a.'
+         /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/collect2 -plugin /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so -plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYLRMeD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_8c35a /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o -L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib -O1 --hash-style=gnu --as-needed --compress-debug-sections=zlib -v CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o
+        collect2 version 13.4.0
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/ld -plugin /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so -plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYLRMeD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_8c35a /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o -L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib -O1 --hash-style=gnu --as-needed --compress-debug-sections=zlib -v CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o
+        GNU ld (GNU Binutils) 2.42.0.20240723
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_8c35a' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_8c35a.'
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux  -O2 -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib -v -Wl,-v CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8c35a
+        gmake[1]: Leaving directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-23dbxi'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:189 (message)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0]
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux]
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward]
+          add: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include]
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include]
+          add: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed]
+          add: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/]
+        end of search list found
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0]
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux]
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward]
+        collapse include dir [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include] ==> [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include]
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include]
+        collapse include dir [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed] ==> [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed]
+        collapse include dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include]
+        implicit include dirs: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward;/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include;/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:225 (message)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-23dbxi']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c35a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8c35a.dir/build.make CMakeFiles/cmTC_8c35a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-23dbxi']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux   -O2 -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++]
+        ignore line: [Target: aarch64-remarkable-linux]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=aarch64-codexsdk-linux --target=aarch64-remarkable-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-remarkable-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/aarch64-remarkable-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_8c35a.dir/']
+        ignore line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/cc1plus -quiet -v -isysroot /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux -D_GNU_SOURCE /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8c35a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o /tmp/cck05DNK.s]
+        ignore line: [GNU C++17 (GCC) version 13.4.0 (aarch64-remarkable-linux)]
+        ignore line: [	compiled by GNU C version 13.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/../../../../../aarch64-remarkable-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/aarch64-remarkable-linux]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/c++/13.4.0/backward]
+        ignore line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/include]
+        ignore line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/include-fixed]
+        ignore line: [ /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/include/]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 5feb9edf8282d44ca09631cd45c96bc4]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_8c35a.dir/']
+        ignore line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/as -v --gdwarf-5 -EL -march=armv8-a+crc+crypto -mabi=lp64 -o CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o /tmp/cck05DNK.s]
+        ignore line: [GNU assembler version 2.42.0 (aarch64-remarkable-linux) using BFD version (GNU Binutils) 2.42.0.20240723]
+        ignore line: [COMPILER_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/]
+        ignore line: [LIBRARY_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_8c35a]
+        ignore line: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c35a.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper]
+        ignore line: [Target: aarch64-remarkable-linux]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=aarch64-codexsdk-linux --target=aarch64-remarkable-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/aarch64-codexsdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-remarkable-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/aarch64-remarkable-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/]
+        ignore line: [LIBRARY_PATH=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0/:/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-a53+crc+crypto' '-mbranch-protection=standard' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux' '-O2' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_8c35a' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_8c35a.']
+        link line: [ /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/collect2 -plugin /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so -plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYLRMeD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_8c35a /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o -L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib -O1 --hash-style=gnu --as-needed --compress-debug-sections=zlib -v CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o]
+          arg [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccYLRMeD.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8c35a] ==> ignore
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o]
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o]
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o]
+          arg [-L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0] ==> dir [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0]
+          arg [-L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0] ==> dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0]
+          arg [-L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib] ==> dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib]
+          arg [-L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0] ==> dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0]
+          arg [-L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib] ==> dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib]
+          arg [-O1] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [--compress-debug-sections=zlib] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o]
+          arg [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o] ==> obj [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o]
+        ignore line: [collect2 version 13.4.0]
+        ignore line: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/ld -plugin /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/liblto_plugin.so -plugin-opt=/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYLRMeD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_8c35a /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o -L/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0 -L/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib -O1 --hash-style=gnu --as-needed --compress-debug-sections=zlib -v CMakeFiles/cmTC_8c35a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o /opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o]
+        linker tool for 'CXX': /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/ld
+        collapse library dir [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0] ==> [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0]
+        collapse library dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0]
+        collapse library dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib]
+        collapse library dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0]
+        collapse library dir [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib] ==> [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crt1.o;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crti.o;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtbegin.o;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0/crtend.o;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/crtn.o]
+        implicit dirs: [/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/lib/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib/aarch64-remarkable-linux/13.4.0;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/lib;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/aarch64-remarkable-linux/13.4.0;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:262 (cmake_determine_linker_id)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/libexec/aarch64-remarkable-linux/gcc/aarch64-remarkable-linux/13.4.0/ld" "-v"
+      GNU ld (GNU Binutils) 2.42.0.20240723
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/Qt6Dependencies.cmake:32 (_qt_internal_find_third_party_dependencies)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/Qt6Config.cmake:155 (include)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-QMQgGA"
+      binary: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-QMQgGA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib"
+      CMAKE_MODULE_PATH: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/3rdparty/kwin"
+      CMAKE_SYSROOT: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-QMQgGA'
+        
+        Run Build Command(s): /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_89d55/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_89d55.dir/build.make CMakeFiles/cmTC_89d55.dir/build
+        gmake[1]: Entering directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-QMQgGA'
+        Building CXX object CMakeFiles/cmTC_89d55.dir/src.cxx.o
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux -DCMAKE_HAVE_LIBC_PTHREAD  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_89d55.dir/src.cxx.o -c /src/build-rm/CMakeFiles/CMakeScratch/TryCompile-QMQgGA/src.cxx
+        Linking CXX executable cmTC_89d55
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89d55.dir/link.txt --verbose=1
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib  CMakeFiles/cmTC_89d55.dir/src.cxx.o -o cmTC_89d55
+        gmake[1]: Leaving directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-QMQgGA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/opt/sdk/sysroots/aarch64-codexsdk-linux/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:55 (include)"
+      - "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/Qt6Config.cmake:200 (find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-TdG99c"
+      binary: "/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-TdG99c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib"
+      CMAKE_MODULE_PATH: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux/usr/lib/cmake/Qt6/3rdparty/kwin"
+      CMAKE_SYSROOT: "/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-TdG99c'
+        
+        Run Build Command(s): /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_35913/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_35913.dir/build.make CMakeFiles/cmTC_35913.dir/build
+        gmake[1]: Entering directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-TdG99c'
+        Building CXX object CMakeFiles/cmTC_35913.dir/src.cxx.o
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux -DHAVE_STDATOMIC  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_35913.dir/src.cxx.o -c /src/build-rm/CMakeFiles/CMakeScratch/TryCompile-TdG99c/src.cxx
+        Linking CXX executable cmTC_35913
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35913.dir/link.txt --verbose=1
+        /opt/sdk/sysroots/aarch64-codexsdk-linux/usr/bin/aarch64-remarkable-linux/aarch64-remarkable-linux-g++   -mcpu=cortex-a53+crc+crypto -mbranch-protection=standard --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux --sysroot=/opt/sdk/sysroots/cortexa53-crypto-remarkable-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,--compress-debug-sections=zlib  CMakeFiles/cmTC_35913.dir/src.cxx.o -o cmTC_35913
+        gmake[1]: Leaving directory '/src/build-rm/CMakeFiles/CMakeScratch/TryCompile-TdG99c'
+        
+      exitCode: 0
+...

@@ -1,0 +1,103 @@
+--- a/qlinuxfbscreen.cpp	2026-05-25 13:29:59
++++ b/qlinuxfbscreen.cpp	2026-05-25 13:29:59
+@@ -31,6 +31,75 @@
+ 
+ using namespace Qt::StringLiterals;
+ 
++namespace {
++// qtfb-shim uses the i.MX framebuffer update ioctl as its repaint signal.
++// The Paper Pro SDK does not ship mxcfb.h, and qtfb-shim intentionally uses
++// this legacy request encoding, so keep the small ABI subset local here.
++constexpr unsigned long kMxcfbSendUpdate = 0x4048462e;
++constexpr quint32 kUpdateModePartial = 0x0;
++constexpr quint32 kUpdateModeFull = 0x1;
++constexpr quint32 kWaveformModeDu = 0x01;
++constexpr quint32 kWaveformModeGc16 = 0x02;
++constexpr quint32 kWaveformModeA2 = 0x04;
++constexpr int kTempUseAmbient = 0x1000;
++constexpr auto kAppLoadDefaultModePath = "/tmp/scanly-qtfb-default-mode";
++constexpr auto kAppLoadForceFullPath = "/tmp/scanly-qtfb-force-full";
++
++struct MxcfbRect {
++    quint32 top;
++    quint32 left;
++    quint32 width;
++    quint32 height;
++};
++
++struct MxcfbAltBufferData {
++    quint32 physAddr;
++    quint32 width;
++    quint32 height;
++    MxcfbRect altUpdateRegion;
++};
++
++struct MxcfbUpdateData {
++    MxcfbRect updateRegion;
++    quint32 waveformMode;
++    quint32 updateMode;
++    quint32 updateMarker;
++    int temp;
++    unsigned int flags;
++    int ditherMode;
++    int quantBit;
++    MxcfbAltBufferData altBufferData;
++};
++
++QString readRefreshMode()
++{
++    QFile file(kAppLoadDefaultModePath);
++    if (!file.open(QIODevice::ReadOnly))
++        return "Content"_L1;
++
++    const QString mode = QString::fromUtf8(file.readAll()).trimmed();
++    return mode.isEmpty() ? QStringLiteral("Content") : mode;
++}
++
++quint32 waveformForMode(const QString &mode)
++{
++    if (mode.compare("Animation"_L1, Qt::CaseInsensitive) == 0)
++        return kWaveformModeA2;
++    if (mode.compare("Mono"_L1, Qt::CaseInsensitive) == 0)
++        return kWaveformModeDu;
++    return kWaveformModeGc16;
++}
++
++bool consumeForceFullFlag()
++{
++    QFile flag(kAppLoadForceFullPath);
++    if (!flag.exists())
++        return false;
++    flag.remove();
++    return true;
++}
++}
++
+ static int openFramebufferDevice(const QString &dev)
+ {
+     int fd = -1;
+@@ -382,6 +451,24 @@
+     for (const QRect &rect : touched)
+         mBlitter->drawImage(rect, mScreenImage, rect);
+ 
++    const bool forceFull = consumeForceFullFlag();
++    const QRect updateRect = forceFull ? mGeometry
++                                       : (touched.boundingRect() & mGeometry);
++    if (!updateRect.isEmpty()) {
++        static quint32 marker = 1;
++        MxcfbUpdateData update = {};
++        update.updateRegion.top = updateRect.y();
++        update.updateRegion.left = updateRect.x();
++        update.updateRegion.width = updateRect.width();
++        update.updateRegion.height = updateRect.height();
++        update.waveformMode = forceFull ? kWaveformModeGc16 : waveformForMode(readRefreshMode());
++        update.updateMode = forceFull ? kUpdateModeFull : kUpdateModePartial;
++        update.updateMarker = marker++;
++        update.temp = kTempUseAmbient;
++        update.flags = forceFull ? 0x01u /* EPDC_FLAG_ENABLE_INVERSION */ : 0u;
++        ioctl(mFbFd, kMxcfbSendUpdate, reinterpret_cast<char *>(&update));
++    }
++
+     return touched;
+ }
+ 

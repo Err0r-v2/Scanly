@@ -1,0 +1,135 @@
+{
+    "classes": [
+        {
+            "className": "LelscanSource",
+            "lineNumber": 10,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "lineNumber": 16,
+                    "name": "searchManga",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "languages",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 5,
+                    "lineNumber": 17,
+                    "name": "fetchChapters",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 6,
+                    "isCloned": true,
+                    "lineNumber": 17,
+                    "name": "fetchChapters",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "lineNumber": 19,
+                    "name": "fetchChapterPages",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "LelscanSource",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "results",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 22,
+                    "name": "searchResults",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapters",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 23,
+                    "name": "chaptersReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "urls",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 2,
+                    "lineNumber": 24,
+                    "name": "chapterPagesReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "lineNumber": 25,
+                    "name": "errorOccurred",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "lelscansource.h",
+    "outputRevision": 69
+}

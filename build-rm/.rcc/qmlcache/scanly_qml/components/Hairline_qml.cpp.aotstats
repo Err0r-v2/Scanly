@@ -1,0 +1,28 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 12,
+                        "durationMicroseconds": 2786,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 7
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 14,
+                        "durationMicroseconds": 3056,
+                        "errorMessage": "",
+                        "functionName": "opacity",
+                        "line": 8
+                    }
+                ],
+                "filepath": "/src/qml/components/Hairline.qml"
+            }
+        ],
+        "moduleId": "app.scanly(scanly)"
+    }
+]

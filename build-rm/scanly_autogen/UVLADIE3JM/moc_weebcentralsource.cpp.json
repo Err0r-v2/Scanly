@@ -1,0 +1,155 @@
+{
+    "classes": [
+        {
+            "className": "WeebCentralSource",
+            "lineNumber": 12,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "searchManga",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "languages",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "fetchChapters",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "isCloned": true,
+                    "name": "fetchChapters",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "fetchChapterPages",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "fetchSeriesCover",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "WeebCentralSource",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "results",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "searchResults",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapters",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "chaptersReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "chapterId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "urls",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "chapterPagesReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mangaId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "coverUrl",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "seriesCoverReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "errorOccurred",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "weebcentralsource.h",
+    "outputRevision": 68
+}

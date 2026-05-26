@@ -1,0 +1,13 @@
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_chaptermodel.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_devicestatus.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_downloadmanager.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_epaperhints.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_imagecache.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_librarystore.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_mangametasource.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_mangasourcerouter.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_pageimagecache.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_searchmodel.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_settingsstore.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_sushiscansource.cpp.json
+/Users/stan/Desktop/Scanly/build-desktop/scanly_autogen/include/../UVLADIE3JM/moc_weebcentralsource.cpp.json
