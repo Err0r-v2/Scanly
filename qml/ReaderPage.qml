@@ -294,7 +294,12 @@ Page {
             source.fetchChapters(page.mangaId, settings.preferredLanguages)
     }
 
-    Component.onDestruction: epaper.resetAppLoadRefreshMode()
+    Component.onDestruction: {
+        epaper.resetAppLoadRefreshMode()
+        // Drop the QML pixmap cache, it accumulates decoded page bitmaps
+        // (~13 MB each) for as long as the reader stays open.
+        imageCache.clearMemoryCache()
+    }
 
     Connections {
         target: source

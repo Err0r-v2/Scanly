@@ -17,6 +17,7 @@ public:
 
     Q_INVOKABLE qint64 sizeOnDisk() const;
     Q_INVOKABLE void clear();
+    Q_INVOKABLE void clearMemoryCache();
 
 private:
     QNetworkAccessManager m_net;

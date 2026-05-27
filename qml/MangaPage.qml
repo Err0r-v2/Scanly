@@ -878,6 +878,8 @@ Page {
         id: chapterKeyboard
         target: chapterSearch
         visible: page.keyboardOpen
+        // Default to digits since chapter search is mostly numeric.
+        onVisibleChanged: if (visible) symbols = true
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom

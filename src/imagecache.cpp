@@ -1,6 +1,7 @@
 #include "imagecache.h"
 
 #include <QNetworkDiskCache>
+#include <QPixmapCache>
 #include <QStandardPaths>
 #include <QDir>
 
@@ -18,6 +19,8 @@ ImageCache::ImageCache(QObject *parent)
 qint64 ImageCache::sizeOnDisk() const { return m_cache->cacheSize(); }
 
 void ImageCache::clear() { m_cache->clear(); }
+
+void ImageCache::clearMemoryCache() { QPixmapCache::clear(); }
 
 QNetworkAccessManager *ScanlyNamFactory::create(QObject *parent)
 {
